@@ -114,7 +114,7 @@ export default function CountryCard() {
         if (languageFilter === "Show All") {
           filteredCountries = countries;
         } else {
-          filteredCountries = countries.filter(country => country.languages.length === languageFilter);
+          filteredCountries = data.filter(country => country.languages.length === languageFilter);
         };
         setData(filteredCountries);
       }
